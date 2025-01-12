@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #4545f5;
+  flex-direction: column;
+}
+
+/* Profile photo styling */
+.profile-photo {
+  width: 150px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #ccc; /* Add a border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for styling */
+}
+
+/* Logo container styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and text */
+}
+
+/* Logo text styling */
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card {
+  border: 1px solid #670ecb;
+}
+
+.main-body {
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 20px; /* Space between sections */
+}
+
+/* Change the color of the <h2> elements */
+.main-body .first-child h2,
+.main-body > section h2 {
+  background-color: blue; /* Set background color to blue */
+  color: white; /* Set text color to white */
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+  border-radius: 4px; /* Optional: Rounded corners */
+  text-align: center; /* Center-align the text */
+}
+
+li {
+  list-style-type: none; /* Remove bullets from lists */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(0, 110, 182);
+  color: rgb(24, 9, 244);
+}
+
+/* Navigation Styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  background-color: #46469b; /* Default color for links */
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  background-color: rgb(192, 16, 16); /* Highlight active link */
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Hover effect */
+}
+
+nav a:not(.active) {
+  background-color: black; /* Black background for non-active links */
+}
+
+nav a:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+}

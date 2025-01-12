@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+  /* Header layout change for larger screens */
+  header {
+    display: block;
+  }
+
+  /* Main content layout - Two columns for larger screens */
+  .main-body {
+    display: grid; /* Use CSS Grid for consistent layout */
+    grid-template-columns: 1fr 1fr; /* Two columns in larger views */
+    gap: 20px; /* Space between sections */
+  }
+
+  .first-child {
+    width: 80%; /* Adjust width for the first section */
+  }
+
+  .main-body > section {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: #f8f8f8; /* Light background for sections */
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  /* Navigation Layout - Flex for larger screens */
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Ensure active link styles apply in larger viewports */
+  nav a.active {
+    background-color: #007bff;
+  }
+
+  nav a:hover {
+    background-color: #0056b3;
+  }
+}
