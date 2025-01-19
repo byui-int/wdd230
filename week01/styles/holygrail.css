@@ -1,0 +1,83 @@
+/* Basic Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+  background: lightpink;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4; /* Spans all columns */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4; /* Span across all columns like the header */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Section Layout */
+main {
+  display: grid; /* Use grid within main */
+  grid-template-columns: 1fr; /* Default: single column layout */
+  gap: 1rem;
+  grid-column: 2 / 3;
+  background-color: coral;
+  padding: 1rem;
+}
+
+/* Right Sidebar Layout */
+.right-sidebar {
+  background-color: yellow;
+  padding: 1rem;
+  grid-column: 3 / 4;
+}
+
+/* Footer Styles */
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4; /* Span across all columns */
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+  .right-sidebar {
+    grid-column: 2 / 3; /* Move sidebar next to main content */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: 1fr 3fr; /* 1/3 and 2/3 layout */
+  }
+  .right-sidebar {
+    grid-column: 3 / 4; /* Right sidebar stays on the far right */
+  }
+}
