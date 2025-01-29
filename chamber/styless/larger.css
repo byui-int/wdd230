@@ -1,0 +1,25 @@
+/* Larger screen styles */
+@media (min-width: 768px) {
+  #menu.hidden {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #events {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #spotlights {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spotlight {
+    flex: 1;
+    margin: 0 1rem;
+  }
+}

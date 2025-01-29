@@ -3,97 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Springfield Chamber of Commerce - Site Plan</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Welcome to the Chamber of Commerce. Discover events, join the community, and explore member benefits."
+    />
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/hero.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
   </head>
   <body>
     <header>
-      <h1>Springfield Chamber of Commerce Site Plan</h1>
+      <div class="logo">
+        <h1>Chamber of Commerce</h1>
+      </div>
+      <button id="menu-toggle">☰</button>
+      <nav id="menu" class="hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <section id="site-name">
-        <h2>Site Name</h2>
-        <p>
-          <strong>Springfield Chamber of Commerce</strong>: Represents
-          Springfield’s business community and promotes local economic growth.
-        </p>
+      <section id="hero">
+        <img src="images/hero.jpg" alt="Welcome to the Chamber of Commerce" />
       </section>
-      <section id="site-purpose">
-        <h2>Site Purpose</h2>
-        <p>The site aims to:</p>
-        <ul>
-          <li>
-            Provide resources and networking opportunities for businesses.
-          </li>
-          <li>Attract visitors and new investments to the Springfield area.</li>
-        </ul>
+
+      <section id="cta">
+        <a href="#" class="cta-button">Join the Chamber of Commerce</a>
       </section>
-      <section id="scenarios">
-        <h2>Scenarios</h2>
-        <p>Examples of potential visitor questions:</p>
-        <ul>
-          <li>What events are available for local businesses this month?</li>
-          <li>How do I join the Chamber and what are the benefits?</li>
-          <li>Where can I find information about local attractions?</li>
-        </ul>
+
+      <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Placeholder for current events content.</p>
       </section>
-      <section id="color-schema">
-        <h2>Color Schema</h2>
-        <ul>
-          <li>
-            <strong>Navy Blue (#0056A4):</strong> Used for headers and
-            navigation.
-          </li>
-          <li>
-            <strong>Gold (#FFD700):</strong> Accent color for buttons and
-            highlights.
-          </li>
-          <li><strong>White (#FFFFFF):</strong> Background for readability.</li>
-        </ul>
+
+      <section id="weather">
+        <h2>Weather</h2>
+        <p>Placeholder for weather card.</p>
       </section>
-      <section id="typography">
-        <h2>Typography</h2>
-        <ul>
-          <li><strong>Roboto:</strong> Used for body text.</li>
-          <li><strong>Merriweather:</strong> Used for headings.</li>
-        </ul>
-      </section>
-      <section id="wireframes">
-        <h2>Wireframes</h2>
-        <p>Wireframe designs for the home page:</p>
-        <ul>
-          <li>
-            <a href="images/wireframe-mobile.png" target="_blank"
-              >Mobile View</a
-            >
-          </li>
-          <li>
-            <a href="images/wireframe-desktop.png" target="_blank"
-              >Desktop View</a
-            >
-          </li>
-        </ul>
-        <p>Preview:</p>
-        <ul>
-          <li>
-            <img
-              src="images/wireframe-mobile.png"
-              alt="Mobile View Wireframe"
-              style="width: 100%; max-width: 400px"
-            />
-          </li>
-          <li>
-            <img
-              src="images/wireframe-desktop.png"
-              alt="Desktop View Wireframe"
-              style="width: 100%; max-width: 600px"
-            />
-          </li>
-        </ul>
+
+      <section id="spotlights">
+        <h2>Our Members</h2>
+        <div class="spotlight">
+          <h3>Company Name</h3>
+          <p>Placeholder for company information.</p>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2025 Springfield Chamber of Commerce</p>
+      <p>Contact us: olaoluwamichaelolumide@gmail.com | +2347063768503</p>
+      <p>Project for WDD 230 by Olaoluwa Michael</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+      <script>
+        document.getElementById("last-modified").textContent =
+          document.lastModified;
+      </script>
     </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
