@@ -5,72 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to the Chamber of Commerce. Discover events, join the community, and explore member benefits."
+      content="Chamber of Commerce Website for the Winix Properties"
     />
-    <meta property="og:title" content="Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/hero.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <title>Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+    <meta name="author" content="Michael Olaoluwa" />
+    <meta
+      property="og:title"
+      content="Home | Chamber of Commerce, Winix Properties"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:url" content="https://byui-int.github.io/wdd230/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="Home | Chamber of Commerce, Winix Properties"
+    />
+    <meta
+      property="og:site_name"
+      content="Michael Olaoluwa wdd2230 chamber of Commerce"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Home | Chamber of Commerce, Winix Properties</title>
   </head>
+
   <body>
+    <!-- Banner -->
+    <aside id="banner">
+      <!-- banner text here -->
+      <p id="closeBanner">&times;</p>
+    </aside>
+    <!-- Header -->
     <header>
       <div class="logo">
-        <h1>Chamber of Commerce</h1>
+        <img src="images/logo.png" alt="logo" />
+        <div>
+          <h1>Winix Properties</h1>
+          <p>Chamber of Commerce</p>
+        </div>
       </div>
-      <button id="menu-toggle">☰</button>
-      <nav id="menu" class="hidden">
+
+      <!-- Navigation -->
+      <nav id="menu">
+        <div id="closeBtn">&times;</div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discovery</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
+      <div id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
+    <!-- Content -->
     <main>
       <section id="hero">
-        <img src="images/hero.jpg" alt="Welcome to the Chamber of Commerce" />
+        <h2>The Business Network that Works</h2>
+        <a href="join.html">Join Us Today!</a>
       </section>
-
-      <section id="cta">
-        <a href="#" class="cta-button">Join the Chamber of Commerce</a>
+      <section id="currentWeather">
+        <h4>Today's Weather:</h4>
+        <p>Currently: <span id="desc"></span></p>
+        <p>Temperature: <span id="temp"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="windSpeed"></span></p>
       </section>
-
+      <section id="forecast">
+        <h2>Weather Forecast</h2>
+        <hr />
+        <div class="forecast-box"></div>
+      </section>
+      <section id="awards">
+        <h2>Top Companies, March 2025</h2>
+        <hr />
+        <div class="companies">
+          <div><img src="images/proaxive.png" alt="ProaxiveLabs" /></div>
+          <div><img src="images/daveni.png" alt="Daveni" /></div>
+          <div><img src="images/budget-law.svg" alt="Budget Law" /></div>
+        </div>
+      </section>
+      <section id="joinUs">
+        <h2>Why Join Us</h2>
+        <hr />
+        <div>
+          <div class="features">
+            <div class="feature">
+              <h4>Advocacy</h4>
+              <p>Have your business interests represented through advocacy.</p>
+            </div>
+            <div class="feature">
+              <h4>Trade Promotion</h4>
+              <p>
+                Infinite access to inward American trade mission delegates into
+                Nigeria
+              </p>
+            </div>
+            <div class="feature">
+              <h4>Business Development</h4>
+              <p>
+                Benefit from leveraging the Chamber’s publicity tools for brand
+                visibility and growth
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="images/hand_shake.jpg" alt="Hand shake" />
+          </div>
+        </div>
+      </section>
       <section id="events">
         <h2>Upcoming Events</h2>
-        <p>Placeholder for current events content.</p>
-      </section>
-
-      <section id="weather">
-        <h2>Weather</h2>
-        <p>Placeholder for weather card.</p>
-      </section>
-
-      <section id="spotlights">
-        <h2>Our Members</h2>
-        <div class="spotlight">
-          <h3>Company Name</h3>
-          <p>Placeholder for company information.</p>
+        <hr />
+        <div>
+          <div class="event">
+            <h4>April 6</h4>
+            <p>Annual Seminar for Winix Properties Startups 2025</p>
+          </div>
+          <div class="event">
+            <h4>April 22</h4>
+            <p>Business Leaders Summit 2025</p>
+          </div>
+          <div class="event">
+            <h4>April 16</h4>
+            <p>Staff Management Training & Audits 2025</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Contact us: olaoluwamichaelolumide@gmail.com | +2347063768503</p>
-      <p>Project for WDD 230 by Olaoluwa Michael</p>
-      <p>Last Modified: <span id="last-modified"></span></p>
-      <script>
-        document.getElementById("last-modified").textContent =
-          document.lastModified;
-      </script>
+      <div class="top">
+        <div class="about-us">
+          <img src="images/logo.png" alt="logo" />
+          <p>
+            We are proudly accountable to a better way of doing business. We
+            actively pursue the wellbeing of staff, communities and environment
+            and help the businesses we work with do so as well.
+          </p>
+        </div>
+        <div>
+          <a href="//google.com">
+            25 AL-Holaniran <br />
+            Olasepe Estate <br />
+            Ojodu Berger <br />
+            Lagos State.
+          </a>
+        </div>
+        <div>
+          <a href="contact.html">Contact Us</a> <br />
+          <a href="tel:+2347063768503">(234) 706 376 8503</a> <br />
+          <a href="mailto:olaoluwamichaelolumide@gmail.com"
+            >olaoluwamichaelolumide@gmail.com</a
+          >
+        </div>
+        <div>
+          <h4>Follow us</h4>
+          <ul>
+            <li><a href="//facebook.com/">FB</a></li>
+            <li><a href="//twitter.com/">TW</a></li>
+            <li><a href="//instagram.com/">INS</a></li>
+            <li><a href="//linkedin.com/">LKD</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Michael Olaoluwa | Images by Unsplash and by
+        <a href="https://commons.wikimedia.org/w/index.php?curid=97342152"
+          >Eukoha - Own work, CC BY-SA 4.0</a
+        >, Icons by
+        <a href="https://www.flaticon.com/authors/chanut">Chanut</a>,
+        <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a
+        >,
+        <a href="https://www.flaticon.com/authors/iconixar" title="iconixar"
+          >iconixar</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        <p>
+          Weather Data provided by
+          <a href="https://https://openweathermap.org/">OpenWeatherMap.org</a>
+        </p>
+        <p>Last modified <span id="currentDate">202x</span>&nbsp;</p>
+      </div>
     </footer>
-
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Welcome!</h2>
+        Join us for the <strong>Chamber of Commerce Meet and Greet</strong> on
+        <strong>Wednesday at 7:00 p.m.</strong>! <br />Don't miss it!
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>
