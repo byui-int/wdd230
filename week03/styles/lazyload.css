@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  padding: 1rem;
+  background: #4545f5;
+  color: rgb(2, 1, 15);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* space between images */
+  padding: 20px;
+}
+
+img {
+  display: block;
+  width: 400px;
+  height: 600px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(0, 110, 182);
+  color: rgb(24, 9, 244);
+}
