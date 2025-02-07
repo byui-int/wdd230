@@ -60,6 +60,29 @@
 
     <main>
       <h1>WDD 230: Web Frontend Development</h1>
+
+      <!-- Hero Image Section -->
+      <section class="hero">
+        <picture>
+          <source
+            srcset="images/temple-small.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/temple-large.webp"
+            media="(max-width: 960px)"
+          />
+          <img
+            src="images/temple-large.webp"
+            alt="Latter-day Temple"
+            loading="lazy"
+            width="960"
+            height="500"
+          />
+        </picture>
+        <div class="overlay">Aba Nigeria Temple</div>
+      </section>
+
       <div class="main-body">
         <section class="first-child">
           <h2>Learning Activities</h2>
@@ -73,7 +96,7 @@
               >
             </li>
             <li><a href="week02/bom.html">Book of Mormon Chapter App</a></li>
-            <li><a href="week03/images/landscape.webp">WebP</a></li>
+            <li><a href="images/landscape.webp">WebP</a></li>
             <li><a href="week03/lazyload.html">Lazyload | Temple Images</a></li>
             <li><a href="#">Activity 4</a></li>
             <li><a href="#">Activity 5</a></li>
@@ -90,9 +113,21 @@
             Wind: 3 km/h <br />
           </p>
 
-          <p>Visits: Bio</p>
+          <p>Visits: <span id="visit-count">0</span></p>
         </section>
       </div>
+
+      <!-- Google Map Embed -->
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198300.33428351447!2d3.229878!3d6.524379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d514b1e975f%3A0x614e01f18d9e8d0b!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1630978296851!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
     </main>
 
     <footer>
