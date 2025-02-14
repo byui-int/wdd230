@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Mic's course assignment portal"
+    />
+    <meta name="author" content="Michael Olaoluwa" />
+    <meta
+      property="og:title"
+      content="Michael Olaoluwa | WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to Mic's course assignment portal for WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:image"
+      content="https://buzznigeria.com/wp-content/uploads/2015/10/lagos-city.jpg"
+    />
+    <meta property="og:url" content="https://byui-int.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <title>Michael Olaoluwa | WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link
+      rel="stylesheet"
+      href="styles/larger.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="images/mic_pic.jpg"
+          alt="Mic's Profile Photo"
+          class="profile-photo"
+        />
+        <span>Michael Olaoluwa</span>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li>
+            <a href="https://byui-int.github.io/wdd230//chamber/index.html"
+              >Chamber</a
+            >
+          </li>
+          <li><a href="#">Site Plan</a></li>
+          <li><a href="#">Form</a></li>
+        </ul>
+        <!-- Hamburger Menu for Mobile -->
+        <button id="hamburger" class="hamburger">&#9776;</button>
+      </nav>
+    </header>
+
+    <main>
+      <form action="record.html" method="get">
+        <fieldset>
+          <legend>Sign Up Information</legend>
+          <label class="top"
+            >Username*
+            <input type="text" name="username" required id="username"
+          /></label>
+          <label class="top"
+            >Password*
+            <input id="password" type="password" name="password" required
+          /></label>
+          <label class="top"
+            >Re-enter Password*
+            <input type="password" name="password" required id="cpassword"
+          /></label>
+          <div id="formmessage"></div>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              title="the title will supplement the error message and support mouse over messaging.
+            e.g., 'A valid byui.edu email address.'"
+          /></label>
+          <label for="r" class="new"
+            >Page Rating <br />
+
+            <input
+              type="range"
+              id="r"
+              name="r"
+              min="1"
+              max="10"
+              value="0"
+              step="1"
+              list="rangevalues"
+          /></label>
+          <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Sign up" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Michael Olaoluwa, Nigeria</p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
