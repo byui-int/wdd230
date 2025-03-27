@@ -186,3 +186,48 @@ body {
   background-color: #121212;
   color: white;
 }
+
+/* Hide the menu in mobile view */
+.nav-links {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show menu when active */
+.nav-links.active {
+  display: flex;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* Hide hamburger in larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    box-shadow: none;
+  }
+}
