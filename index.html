@@ -50,11 +50,16 @@
             <a href="https://byui-int.github.io/wdd230/" class="active">Home</a>
           </li>
           <li>
-            <a href="https://byui-int.github.io/wdd230//chamber/index.html"
+            <a href="https://byui-int.github.io/wdd230/chamber/index.html"
               >Chamber</a
             >
           </li>
-          <li><a href="#">Site Plan</a></li>
+          <li>
+            <a
+              href="https://byui-int.github.io/wdd230/week01/chamber-site-plan.html"
+              >Site Plan</a
+            >
+          </li>
           <li>
             <a href="https://byui-int.github.io/wdd230/form.html">Form</a>
           </li>
@@ -131,6 +136,11 @@
               <a href="https://byui-int.github.io/wdd230/week05/prophets.html"
                 >The Fetch API</a
               >
+              |
+              <a
+                href="https://byui-int.github.io/wdd230/week05/new-ward-members.json"
+                >New Ward Members Json</a
+              >
             </li>
 
             <li><a href="#">Activity 6</a></li>
@@ -140,11 +150,13 @@
 
         <section>
           <h2>Information</h2>
-          <p>
-            Weather: Lagos, Nigeria | Mostly cloudy 33°C°F <br />
-            Precipitation: 0% | Humidity: 23% <br />
-            Wind: 3 km/h <br />
-          </p>
+
+          <h2 id="city">City Name</h2>
+          <div class="weather-card">
+            <img id="weather-icon" alt="Weather Icon" />
+            <p id="temperature">Temperature: -- °F</p>
+            <p id="description">Condition: --</p>
+          </div>
 
           <p>Visits: <span id="visit-count">0</span></p>
         </section>
@@ -172,5 +184,6 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visit.js"></script>
   </body>
 </html>
